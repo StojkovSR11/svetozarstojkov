@@ -60,6 +60,15 @@
     position: relative;
   }
 
+  .hero img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
   section {
     background-color: var(--bg-dark);
   }
@@ -143,7 +152,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Svetozar.dev</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -162,19 +171,19 @@
 <!-- Hero -->
 <section class="hero" id="hero">
   <div class="container" data-aos="zoom-in">
-    <img src="profile.png" class="rounded-circle mb-4" alt="Your Photo">
+    <img src="profile.png" class="mb-4" alt="Your Photo">
     <h1 class="display-4">Svetozar Stojkov</h1>
-    <p class="lead">Junior Software Engineer | Full Stack Developer</p>
+    <p class="lead">Junior Software Engineer</p>
     <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Get in Touch</a>
   </div>
 </section>
 
 <!-- About -->
 <section id="about" class="py-5">
-  <div class="container" data-aos="fade-up">
+   <div class="container" data-aos="fade-up">
     <h2 class="mb-4">About Me</h2>
-    <p>I’m a passionate junior software engineer with experience in full stack development, microservices, and cloud-based systems. I love building scalable applications and learning new technologies.</p>
-  </div>
+    <h5>I’m a final-year software engineering student with a strong passion for software development and building practical projects. My goal is to gain hands-on experience, grow as a developer, and contribute to real-world solutions.</h5>
+   </div>
 </section>
 
 <!-- Skills -->
@@ -183,28 +192,35 @@
     <h2 class="mb-4">Skills</h2>
     <div class="row">
       <div class="col-md-6">
-        <h6>Go</h6>
+        <h6>Go (Golang)</h6>
         <div class="progress mb-3"><div class="progress-bar" style="width: 85%">85%</div></div>
 
         <h6>Angular</h6>
-        <div class="progress mb-3"><div class="progress-bar bg-success" style="width: 75%">75%</div></div>
+        <div class="progress mb-3"><div class="progress-bar bg-success" style="width: 80%">80%</div></div>
 
-        <h6>Docker & Kubernetes</h6>
-        <div class="progress mb-3"><div class="progress-bar bg-info" style="width: 70%">70%</div></div>
+        <h6>JavaScript / HTML5 / CSS</h6>
+        <div class="progress mb-3"><div class="progress-bar bg-warning" style="width: 80%">80%</div></div>
+
+        <h6>Java / Spring MVC / Hibernate</h6>
+        <div class="progress mb-3"><div class="progress-bar bg-danger" style="width: 75%">75%</div></div>
       </div>
       <div class="col-md-6">
-        <h6>MongoDB / Cassandra / Neo4j</h6>
-        <div class="progress mb-3"><div class="progress-bar bg-warning" style="width: 65%">65%</div></div>
+        <h6>C#</h6>
+        <div class="progress mb-3"><div class="progress-bar bg-secondary" style="width: 65%">65%</div></div>
 
-        <h6>REST / gRPC / WebSockets</h6>
-        <div class="progress mb-3"><div class="progress-bar bg-danger" style="width: 75%">75%</div></div>
+        <h6>SQL Server / MySQL</h6>
+        <div class="progress mb-3"><div class="progress-bar" style="width: 70%">70%</div></div>
 
-        <h6>CI/CD</h6>
-        <div class="progress mb-3"><div class="progress-bar bg-secondary" style="width: 60%">60%</div></div>
+        <h6>MongoDB / Cassandra</h6>
+        <div class="progress mb-3"><div class="progress-bar bg-info" style="width: 65%">65%</div></div>
+
+        <h6>Git / Docker</h6>
+        <div class="progress mb-3"><div class="progress-bar bg-primary" style="width: 75%">75%</div></div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Projects -->
 <section id="projects" class="py-5">
@@ -252,7 +268,7 @@
   <div class="container" data-aos="fade-up">
     <h2 class="mb-4">Resume</h2>
     <p>Download my latest resume in PDF format:</p>
-    <a href="resume.pdf" class="btn btn-primary" download><i class="fa fa-download me-2"></i>Download Resume</a>
+    <a href="CV Svetozar Stojkov ENG.pdf" class="btn btn-primary" download><i class="fa fa-download me-2"></i>Download Resume</a>
   </div>
 </section>
 
@@ -260,21 +276,26 @@
 <section id="contact" class="py-5">
   <div class="container" data-aos="fade-up">
     <h2 class="mb-4">Contact Me</h2>
-    <form>
-      <div class="mb-3">
+    <form action="https://formsubmit.co/ssveta99@gmail.com" method="POST">
+    <!-- Add hidden fields to avoid spam -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
+
+    <div class="mb-3">
         <label for="name" class="form-label">Your Name</label>
-        <input type="text" id="name" class="form-control" placeholder="John Doe" required>
-      </div>
-      <div class="mb-3">
+        <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+    </div>
+    <div class="mb-3">
         <label for="email" class="form-label">Your Email</label>
-        <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
-      </div>
-      <div class="mb-3">
+        <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+    </div>
+    <div class="mb-3">
         <label for="message" class="form-label">Message</label>
-        <textarea id="message" rows="4" class="form-control" placeholder="Let's build something amazing!" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-success">Send Message</button>
+        <textarea id="message" name="message" rows="4" class="form-control" placeholder="Let's build something amazing!" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Send Message</button>
     </form>
+
   </div>
 </section>
 
