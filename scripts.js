@@ -33,3 +33,17 @@
       }
     });
   });
+
+  // Show the button when scrolling down 100px from the top of the document
+window.onscroll = function () {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("backToTop").style.display = "block";
+  } else {
+    document.getElementById("backToTop").style.display = "none";
+  }
+};
+
+// Scroll the page back to the top when the button is clicked
+document.getElementById("backToTop").onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
