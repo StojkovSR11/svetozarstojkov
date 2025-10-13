@@ -11,6 +11,11 @@
     background-color: var(--bg-dark);
     color: var(--text-light);
     scroll-behavior: smooth;
+    scroll-padding-top: 40px;
+  }
+  
+  html {
+    scroll-padding-top: 40px;
   }
 
   h1, h2, h3, .navbar-brand {
