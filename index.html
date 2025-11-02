@@ -1,326 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Svetozar Stojkov - Software Engineer Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svetozar Stojkov - Software Engineer Portfolio</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- Custom Styles -->
-  <link href="styles.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="styles.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
 
-
-</head>
-
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top d-none d-lg-block">
-  <div class="container">
-    <!-- Left side social media links -->
-    <ul class="navbar-nav me-auto d-flex flex-row">
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/svetozar-stojkov-sr11/" target="_blank">
-          <i class="fab fa-linkedin me-2"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://github.com/StojkovSR11" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-    </ul>
-
-    <!-- Right side menu -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<!-- Hero -->
-<section class="hero" id="hero">
-  <div class="container" data-aos="zoom-in">
-    <img src="profile.png" class="mb-4" alt="Your Photo">
-    <h1 class="display-4">Svetozar Stojkov</h1>
-    <p class="lead">Software Engineer</p>
-    <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Get in Touch</a>
-  </div>
-</section>
-
-<!-- About -->
-<section id="about" class="py-5">
-   <div class="container" data-aos="fade-up">
-    <h2 class="mb-4">About Me</h2>
-    <h5>I’m a software engineer focused on improving my skills and growing through real-world experience. I enjoy working in teams, learning from others, and contributing to projects where I can make a difference. I’m always looking for opportunities to tackle new challenges and expand my knowledge.</h5>
-   </div>
-</section>
-
-
-<!-- Experience -->
-<section id="experience" class="bg-light py-5">
-  <div class="container" data-aos="fade-up">
-    <h2 class="mb-4">Professional Experience</h2>
-    <div class="card mb-3">
-      <div class="card-body">
-        <div class="d-flex justify-content-between align-items-start mb-3">
-          <div>
-            <h4 class="card-title mb-1">Software Engineer</h4>
-            <h5 class="text-primary">Vega IT</h5>
-          </div>
-          <span class="badge bg-primary">06/2025 – Present</span>
-        </div>
-        <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Novi Sad</p>
-        <ul class="mt-3">
-          <li>Contributed to the development of a shared Angular UI component library using an Nx monorepo</li>
-          <p></p>
-          <li>Contributed to setup, run, and build scripts to automate and simplify the development and deployment process</li>
-          <p></p>
-          <li>Implemented AWS S3 bucket integration to store and serve application assets, improving deployment efficiency</li>
-          <p></p>
-          <li>Worked closely with teammates to implement and improve Angular components, focusing on clean structure and reusability</li>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top d-none d-lg-block"
+    >
+      <div class="container">
+        <!-- Left side social media links -->
+        <ul class="navbar-nav me-auto d-flex flex-row">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/svetozar-stojkov-sr11/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin me-2"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://github.com/StojkovSR11"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Skills Section -->
-<section id="skills" class="bg-light py-5">
-  <div class="container" data-aos="fade-up">
-    <h2 class="mb-5 text-center">Skills</h2>
-    <div class="row g-4 justify-content-center">
-      <!-- Skill Card -->
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-go-original colored fs-1 mb-2"></i>
-          <img src="go.png" alt="Go" style="width:60px; height:auto;" class="mb-2">
-          <h6 class="mt-2">Go (Golang)</h6>
+        <!-- Right side menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-angularjs-plain colored fs-1 mb-2"></i>
-          <h6 class="mt-2">Angular</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-javascript-plain colored fs-1 mb-1"></i>
-          <i class="devicon-html5-plain colored fs-1 mb-1"></i>
-          <i class="devicon-css3-plain colored fs-1 mb-1"></i>
-          <h6 class="mt-2">JS / HTML5 / CSS</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-java-plain colored fs-1 mb-2"></i>
-          <h6 class="mt-2">Java / Spring / Hibernate</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-csharp-plain colored fs-1 mb-2"></i>
-          <h6 class="mt-2">C#</h6>
-        </div>
-      </div>
+    </nav>
 
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-mysql-plain colored fs-1 mb-1"></i>
-          <i class="devicon-microsoftsqlserver-plain colored fs-1 mb-1"></i>
-          <h6 class="mt-2">MySQL / SQL Server</h6>
-        </div>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container" data-aos="zoom-in">
+        <img src="profile.png" class="mb-4" alt="Your Photo" />
+        <h1 class="display-4">Svetozar Stojkov</h1>
+        <p class="lead">Software Engineer</p>
+        <a href="#contact" class="btn btn-outline-light btn-lg mt-3"
+          >Get in Touch</a
+        >
       </div>
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-mongodb-plain colored fs-1 mb-1"></i>
-          <i class="devicon-apachecassandra-plain colored fs-1 mb-1"></i>
-          <h6 class="mt-2">MongoDB / Cassandra</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-git-plain colored fs-1 mb-1"></i>
-          <i class="devicon-docker-plain colored fs-1 mb-1"></i>
-          <h6 class="mt-2">Git / Docker</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-amazonwebservices-plain-wordmark colored fs-1 mb-2"></i>
-          <h6 class="mt-2">AWS</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%;">
-        <div class="bg-white text-center p-4 shadow-sm rounded hover-shadow">
-          <i class="devicon-firebase-plain colored fs-1 mb-2"></i>
-          <h6 class="mt-2">Firebase</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="mb-4">About Me</h2>
+        <h5>
+          I’m a software engineer focused on improving my skills and growing
+          through real-world experience. I enjoy working in teams, learning from
+          others, and contributing to projects where I can make a difference.
+          I’m always looking for opportunities to tackle new challenges and
+          expand my knowledge.
+        </h5>
+      </div>
+    </section>
 
+    <!-- Experience -->
+    <section id="experience" class="bg-light py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="mb-4">Professional Experience</h2>
 
-
-<!-- Projects -->
-<section id="projects" class="py-5">
-  <div class="container" data-aos="fade-up">
-    <h2 class="mb-4">Projects</h2>
-    <div class="row g-4">
-      
-      <div class="col-md-4">
-        <div class="card project-card h-100">
-          <img src="Meowscape.png" class="card-img-top" alt="Project 1">
+        <!-- Vega IT -->
+        <div class="card mb-3">
           <div class="card-body">
-            <h5 class="card-title">Meowscape</h5>
-            <p class="card-text">Can you outsmart your opponent and claim victory? Goofy turn based strategy game.</p>
-            <a href="https://meowscape.onrender.com/" class="btn btn-outline-primary btn-sm">Play</a>
-            <a href="https://github.com/StojkovSR11/meowscape" class="btn btn-outline-primary btn-sm">Github</a>
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div>
+                <h4 class="card-title mb-1">Software Engineer</h4>
+                <h5 class="text-primary">Vega IT</h5>
+              </div>
+              <span class="badge bg-primary">01/2025 – 10/2025</span>
+            </div>
+            <p class="mb-2">
+              <i class="fas fa-map-marker-alt me-2"></i>Novi Sad, Serbia
+            </p>
 
-            <!-- New bottom image -->
-            <img src="MeowTech.png" class="card-img-bottom" alt="Bottom Image 1">
+            <h6 class="fw-bold mt-3">
+              Angular UI Component Library (Nx Monorepo + AWS + Build
+              Automation)
+            </h6>
+            <ul class="mt-2">
+              <li>
+                Contributed to the development of a shared Angular UI component
+                library within an Nx monorepo, enabling consistent and reusable
+                UI across multiple applications.
+              </li>
+              <li>
+                Implemented build scripts and CI/CD pipelines to automate
+                development, testing, and deployment processes.
+              </li>
+              <li>
+                Integrated AWS S3 for efficient storage and delivery of assets,
+                improving application load times and deployment efficiency.
+              </li>
+              <li>
+                Collaborated closely with team members to design scalable,
+                maintainable, and modular components following best practices.
+              </li>
+            </ul>
+
+            <h6 class="fw-bold mt-4">
+              Full-Stack (React + .NET) Web Application
+            </h6>
+            <ul class="mt-2">
+              <li>
+                Developed a full-stack web application using React for frontend
+                and .NET for backend, implementing complex business logic and
+                user workflows.
+              </li>
+              <li>
+                Designed RESTful APIs and integrated them with React components
+                for dynamic and responsive user interfaces.
+              </li>
+              <li>
+                Worked on database interactions, authentication, and secure data
+                handling, ensuring reliability and maintainability.
+              </li>
+              <li>
+                Participated in code reviews and Agile teamwork, contributing to
+                high-quality and timely project delivery.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-md-4">
-        <div class="card project-card h-100">
-          <img src="SpaceTrouble.png" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Space Trouble</h5>
-            <p class="card-text">Use evasive maneuvers to dodge incoming fire while staying on the offensive. Fast-paced space shooter game.</p>
-            <a href="https://spacetrouble.onrender.com/" class="btn btn-outline-primary btn-sm">Play</a>
-            <a href="https://github.com/StojkovSR11/SpaceTrouble" class="btn btn-outline-primary btn-sm">Github</a>
-            <!-- New bottom image -->
-            <img src="SpaceTech.png" class="card-img-bottom" alt="Bottom Image 2">
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="mb-5 text-center">Skills</h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Skill Card -->
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i class="devicon-react-original colored fs-1 mb-2"></i>
+              <h6 class="mt-2">React</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i class="devicon-angularjs-plain colored fs-1 mb-2"></i>
+              <h6 class="mt-2">Angular</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i class="devicon-javascript-plain colored fs-1 mb-1"></i>
+              <i class="devicon-html5-plain colored fs-1 mb-1"></i>
+              <i class="devicon-css3-plain colored fs-1 mb-1"></i>
+              <h6 class="mt-2">JS / HTML5 / CSS</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i class="devicon-java-plain colored fs-1 mb-2"></i>
+              <h6 class="mt-2">Java / Spring / Hibernate</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i class="devicon-csharp-plain colored fs-1 mb-2"></i>
+              <h6 class="mt-2">C#</h6>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i class="devicon-mysql-plain colored fs-1 mb-1"></i>
+              <i class="devicon-microsoftsqlserver-plain colored fs-1 mb-1"></i>
+              <h6 class="mt-2">MySQL / SQL Server</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i class="devicon-mongodb-plain colored fs-1 mb-1"></i>
+              <i class="devicon-apachecassandra-plain colored fs-1 mb-1"></i>
+              <h6 class="mt-2">MongoDB / Cassandra</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i class="devicon-git-plain colored fs-1 mb-1"></i>
+              <i class="devicon-docker-plain colored fs-1 mb-1"></i>
+              <h6 class="mt-2">Git / Docker</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i
+                class="devicon-amazonwebservices-plain-wordmark colored fs-1 mb-2"
+              ></i>
+              <h6 class="mt-2">AWS</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="bg-white text-center p-4 shadow-sm rounded hover-shadow"
+            >
+              <i class="devicon-firebase-plain colored fs-1 mb-2"></i>
+              <h6 class="mt-2">Firebase</h6>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-            <div class="col-md-4">
-        <div class="card project-card h-100">
-          <img src="Taskio.png" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Taskio</h5>
-            <p class="card-text">A full-featured project management platform for organizing projects, tasks, and team collaboration.</p>
-            <a href="https://github.com/StojkovSR11/Taskio" class="btn btn-outline-primary btn-sm">Github</a>
-            <!-- New bottom image -->
-            <img src="TaskTech.png" class="card-img-bottom" alt="Bottom Image 2">
+    <!-- Projects -->
+    <section id="projects" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="Meowscape.png" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <h5 class="card-title">Meowscape</h5>
+                <p class="card-text">
+                  Can you outsmart your opponent and claim victory? Goofy turn
+                  based strategy game.
+                </p>
+                <a
+                  href="https://meowscape.onrender.com/"
+                  class="btn btn-outline-primary btn-sm"
+                  >Play</a
+                >
+                <a
+                  href="https://github.com/StojkovSR11/meowscape"
+                  class="btn btn-outline-primary btn-sm"
+                  >Github</a
+                >
+
+                <!-- New bottom image -->
+                <img
+                  src="MeowTech.png"
+                  class="card-img-bottom"
+                  alt="Bottom Image 1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img
+                src="SpaceTrouble.png"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Space Trouble</h5>
+                <p class="card-text">
+                  Use evasive maneuvers to dodge incoming fire while staying on
+                  the offensive. Fast-paced space shooter game.
+                </p>
+                <a
+                  href="https://spacetrouble.onrender.com/"
+                  class="btn btn-outline-primary btn-sm"
+                  >Play</a
+                >
+                <a
+                  href="https://github.com/StojkovSR11/SpaceTrouble"
+                  class="btn btn-outline-primary btn-sm"
+                  >Github</a
+                >
+                <!-- New bottom image -->
+                <img
+                  src="SpaceTech.png"
+                  class="card-img-bottom"
+                  alt="Bottom Image 2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="Taskio.png" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <h5 class="card-title">Taskio</h5>
+                <p class="card-text">
+                  A full-featured project management platform for organizing
+                  projects, tasks, and team collaboration.
+                </p>
+                <a
+                  href="https://github.com/StojkovSR11/Taskio"
+                  class="btn btn-outline-primary btn-sm"
+                  >Github</a
+                >
+                <!-- New bottom image -->
+                <img
+                  src="TaskTech.png"
+                  class="card-img-bottom"
+                  alt="Bottom Image 2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="Gea.jpg" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <h5 class="card-title">Gea</h5>
+                <p class="card-text">
+                  A travel agency web app that enables users to explore
+                  destinations and manage travel bookings easily.
+                </p>
+                <a
+                  href="https://gitlab.com/stojkov.sr11/wp"
+                  class="btn btn-outline-primary btn-sm"
+                  >Github</a
+                >
+                <!-- New bottom image -->
+                <img
+                  src="GeaTech.png"
+                  class="card-img-bottom"
+                  alt="Bottom Image 2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="Sitpass.jpg" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <h5 class="card-title">Sitpass</h5>
+                <p class="card-text">
+                  A fitness tracking app designed to support users in monitoring
+                  their workouts and fitness goals.
+                </p>
+                <a
+                  href="https://github.com/StojkovSR11/Client-Server-Web-Technologies"
+                  class="btn btn-outline-primary btn-sm"
+                  >Github</a
+                >
+                <!-- New bottom image -->
+                <img
+                  src="SitTech.png"
+                  class="card-img-bottom"
+                  alt="Bottom Image 2"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-            <div class="col-md-4">
-        <div class="card project-card h-100">
-          <img src="Gea.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Gea</h5>
-            <p class="card-text">A travel agency web app that enables users to explore destinations and manage travel bookings easily.</p>
-            <a href="https://gitlab.com/stojkov.sr11/wp" class="btn btn-outline-primary btn-sm">Github</a>
-            <!-- New bottom image -->
-            <img src="GeaTech.png" class="card-img-bottom" alt="Bottom Image 2">
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="mb-4">Contact Me</h2>
+        <form action="https://formsubmit.co/ssveta99@gmail.com" method="POST">
+          <!-- Add hidden fields to avoid spam -->
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="John Doe"
+              required
+            />
           </div>
-        </div>
-      </div>
-
-            <div class="col-md-4">
-        <div class="card project-card h-100">
-          <img src="Sitpass.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Sitpass</h5>
-            <p class="card-text">A fitness tracking app designed to support users in monitoring their workouts and fitness goals.</p>
-            <a href="https://github.com/StojkovSR11/Client-Server-Web-Technologies" class="btn btn-outline-primary btn-sm">Github</a>
-            <!-- New bottom image -->
-            <img src="SitTech.png" class="card-img-bottom" alt="Bottom Image 2">
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="john@example.com"
+              required
+            />
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="form-control"
+              placeholder="Let's build something amazing!"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Send Message</button>
+        </form>
       </div>
-      
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p class="mb-0">&copy; 2025 Svetozar Stojkov. All rights reserved.</p>
+      </div>
+    </footer>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-<!-- Contact -->
-<section id="contact" class="py-5">
-  <div class="container" data-aos="fade-up">
-    <h2 class="mb-4">Contact Me</h2>
-    <form action="https://formsubmit.co/ssveta99@gmail.com" method="POST">
-    <!-- Add hidden fields to avoid spam -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="box">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-    <div class="mb-3">
-        <label for="name" class="form-label">Your Name</label>
-        <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
-    </div>
-    <div class="mb-3">
-        <label for="email" class="form-label">Your Email</label>
-        <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
-    </div>
-    <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea id="message" name="message" rows="4" class="form-control" placeholder="Let's build something amazing!" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-success">Send Message</button>
-    </form>
-
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <p class="mb-0">&copy; 2025 Svetozar Stojkov. All rights reserved.</p>
-  </div>
-</footer>
-
-<!-- Back to Top Button -->
-<button id="backToTop" class="btn btn-primary" title="Go to top">
-  <i class="fas fa-arrow-up"></i>
-</button>
-
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="scripts.js"></script>
-
-
-
-
-</body>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
